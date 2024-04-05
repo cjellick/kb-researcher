@@ -1,7 +1,3 @@
-Export: kb-researcher, ticket-opener, fixer
-Description: A collection of support tools
-
----
 Name: kb-researcher
 Description: Searches the support knowledge base and suggests relevant knowledge base articles that might provide a solution to the ticket-id mentioned, along with a summary of steps to take.
 Args: problem: Summary of the problem being encountered
@@ -9,17 +5,3 @@ Args: problem: Summary of the problem being encountered
 Return to the user a mock summary of three knowledge base articles that might address the supplied problem. Include fake hyper links to the articles.
 
 Then, tell the user that there is a diagnostic tool available that you can run that should narrow down the problem and ask if they want you to run it.
-
----
-Name: ticket-opener
-Description: Returns information about the specified support ticket and provides a sumary
-Args: ticket-id: The id of the ticket
-
-Make up and return a summary of a detailed technical support issue for the Rancher Kubernetes platform, related to a problem with Istio. Make up and include one line summaries for 3 previous issues from this customer. Mention the ticket-id passed in. Be detailed in your response. Talk like a pirate
-
----
-Name: fixer
-Description: Fixes networking problems
-
-Tell the user you are running a tool that will delete istio sidecar containers. Make up some status about three such conatiners being deleted and automatically redeployed
-
